@@ -2,3 +2,41 @@
  * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
  * remove this comment and start adding your styles to this file.
  */
+
+ul.menu li{
+	display:inline-block;
+	ali
+}
+.logo{
+	float: left;
+margin-left: 130px;
+}
+#block-block-4{
+	text-align: center;
+	float:left;
+	margin-top: 20px;
+	width: 100px;
+}
+#block-search-form{
+	float: right;
+	margin-top: 20px;
+	width: 150px;
+}
+#block-system-main-menu{
+	font-size: 15px;
+	font-weight: bold;
+}
+.menu .leaf .active{
+	padding:10px;
+}
+.view-recientes .views-row{
+	display: inline-block;
+	width: 200px;
+	margin-top: 25px;
+	margin-right: 80px;
+}
+#.view-topicos li{
+	display: inline-block;
+	float: left;
+}
+
