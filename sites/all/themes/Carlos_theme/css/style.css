@@ -25,6 +25,7 @@ margin-left: 130px;
 #block-system-main-menu{
 	font-size: 15px;
 	font-weight: bold;
+	background-color: #e1e1e1;
 }
 .menu .leaf .active{
 	padding:10px;
@@ -35,8 +36,126 @@ margin-left: 130px;
 	margin-top: 25px;
 	margin-right: 80px;
 }
-#.view-topicos li{
+#topicos{
+	margin-top: 20px;
+	width: 100%;
+	border-top: 1pt solid;
+	border-bottom: 1pt solid;
+	display: inline-block;
+}
+#topicos li{
+	display: inline-block;
+	float: left;
+	margin-left: 50px;
+}
+
+#topicos p{
+	font-size: 18px;
+	font-weight: bold;
+}
+#block-views-top-post-block{
+	display: inline-block;
+	border-right: 1pt solid;
+	font-size: 14px;
+	padding-right: 20px;
+	float: left;
+	width: 35%;
+}
+#block-views-top-post-block a{
+	font-size: 32px;
+}
+
+#block-views-top-post-block .attachment a{
+	font-size: 18px;
+}
+#block-views-top-post-block .attachment .views-row{
+	border-top: 1pt solid;
+	margin-top: 50px;
+}
+
+#block-views-top-post-block-1{
+	font-size: 14px;
+	padding-left: 10px;
+	display: inline-block;
+	float: left;
+	width: 30%;
+}
+#block-views-top-post-block-1 a{
+	font-size: 18px;
+}
+
+#block-views-top-post-block-1 .attachment .views-row{
+	border-top: 1pt solid;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+#publicidad{
+	width: 30%;
+	height: 1000px;
+	display: inline-block;
+	float: left;
+	border: 1pt solid;
+	background-color: blueviolet;
+	margin-left: 50px;
+}
+#en_vivo{
+	width: 700px;
+	height: 350px;
+	margin-top: 20px;
+	background-color: #555555;
+	color: white;
+}
+#visor{
+	width: 366px;
 	display: inline-block;
 	float: left;
 }
-
+#en_vivo_logo{
+	width: 100%;
+	height: 61px;
+	background-color: red;
+}
+#imagen{
+	width: 366px;
+	height: 240px;
+	background-color: black;
+}
+#visor p{
+	font-size: 17px;
+	margin-top: 20px;
+}
+#programacion{
+	width: 40%;
+	display: inline-block;
+}
+#programacion h4{
+	float: left;
+	font-size: 20px;
+	margin-bottom: 29px;
+	margin-left: 5px;
+}
+#programacion a{
+	padding-top: 12px;
+	padding-left: 5px;
+	float: right;
+	font-size: 14px;
+}
+#programacion ul{
+	float: left;
+	width: 100%;
+}
+.prog-img{
+	width: 130px;
+	height: 75px;
+	float: left;
+	background-color: gray;
+	margin-bottom: 7px;
+}
+ul{
+	list-style: none;
+}
+.prog-title{
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+}
