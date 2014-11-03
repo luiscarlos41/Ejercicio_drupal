@@ -130,7 +130,7 @@ ul.menu li{
 #en_vivo{
 	width: 700px;
 	height: 350px;
-	margin-top: 20px;
+	margin-top: 50px;
 	background-color: #555555;
 	color: white;
 }
@@ -274,4 +274,48 @@ ul{
 	font-size: 11px;
 	color: #555555;
 }
+#block-webform-client-block-502 label{
+	font-size: 20px;
+}
+#block-webform-client-block-502 label, #block-webform-client-block-502 input{
+	display: inline-block;
+}
 
+#edit-submitted-nombre{
+	width: 400px;
+	margin-bottom: 20px;
+}
+.webform-component--nombre{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.webform-component--edad{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.webform-component--sexo{
+	width: 100%;
+	margin-bottom: 20px;
+}
+#edit-submitted-edad{
+	font-size: 14px;
+	padding: 5px;
+	width: 50px;
+	height: 30px;
+}
+.webform-component--sexo label{
+	float: left;
+	margin-right: 20px;
+
+}
+#edit-submitted-sexo{
+	width: 500px;
+}
+#edit-submitted-sexo div{
+	display: inline-block;
+	margin: 0;
+margin-bottom: 15px;
+}
+.form-type-radio input{
+	margin-top: 10px;
+}
