@@ -1,0 +1,17 @@
+<?php
+
+function mas_comentados_help($path, $arg){
+	switch ($path){
+		case "admin/help#mas_comentados":
+			return "<h1>Esta es la página de ayuda del modulo de mas comentados</h1>";
+		break;
+	}
+}
+
+function mas_comentados_block_info(){
+	$blocks['mas_comentados'] = array(
+		'info' => t('Atriculos mas comentados'),
+		'cache' => DRUPAL_CACHE_PER_ROLE,
+	);
+	return $blocks;
+}
