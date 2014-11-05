@@ -136,20 +136,16 @@
     <?php endif; ?>
 
     <section<?php print $content_column_class; ?>>
-      
-
-      <?php if (!empty($page['encuesta'])): ?>
-          <div id="encuesta">
-            <?php print render($page['encuesta']); ?>
-          </div>
-      <?php endif; ?>
-
 
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
       <?php if (!empty($breadcrumb)): print $breadcrumb; endif;?>
-      
+      <?php if (!empty($page['encuesta'])): ?>
+          <div id="encuesta">
+            <?php print render($page['encuesta']); ?>
+          </div>
+      <?php endif; ?>
       <?php if (!empty($action_links)): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
@@ -168,7 +164,7 @@
         <?php print render($page['help']); ?>
       <?php endif; ?>
        <?php print render($page['content']); ?>
-      </div>
+      </div>      
       
     </section>
 

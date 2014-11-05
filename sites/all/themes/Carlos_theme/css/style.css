@@ -40,11 +40,12 @@ ul.menu li{
 	margin-top: 20px;
 	width: 100px;
 }
-#block-search-form{
+.navbar #block-search-form{
 	float: right;
-	margin-top: 20px;
+	margin-top: 40px;
 	width: 150px;
 }
+
 #block-system-main-menu{
 	font-size: 15px;
 	font-weight: bold;
@@ -126,6 +127,9 @@ ul.menu li{
 	border: 1pt solid;
 	background-color: blueviolet;
 	margin-left: 50px;
+}
+#block-block-7{
+	display: inline-block;
 }
 #en_vivo{
 	width: 700px;
@@ -227,8 +231,8 @@ ul{
 }
 #block-block-8{
 	display: inline-block;
-	float: left;
 	border-bottom: 1pt solid #555555;
+	margin-left: 10px;
 }
 #siguenos #logo{
 	width: 100%;
@@ -321,4 +325,10 @@ margin-bottom: 15px;
 }
 #block-views-slide-block{
 	margin-bottom: 25px;
+	display: inline-block;
+}
+#block-mas-comentados-mas-comentados{
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 15px;
 }

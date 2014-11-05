@@ -10,8 +10,41 @@ function mas_comentados_help($path, $arg){
 
 function mas_comentados_block_info(){
 	$blocks['mas_comentados'] = array(
-		'info' => t('Atriculos mas comentados'),
+		'info' => t('Articulos mas comentados'),
 		'cache' => DRUPAL_CACHE_PER_ROLE,
 	);
 	return $blocks;
+}
+
+function mas_comentados_retContent(){
+	 $query = db_select('node', 'n');
+	 $query->join('node_comment_statistics','s','s.nid = n.nid');
+	 return $query->fields('n', array('nid', 'title'))
+	 	->condition('comment_count',0,'>')
+	 	->orderBy('comment_count','DESC')
+	 	->range(0, 10)
+	 	->execute();
+}
+
+function mas_comentados_block_view($delta = ''){
+	switch ($delta){
+		case 'mas_comentados':
+			$block['subject'] = t('Mas comentados');
+			
+			if (user_access('access content')){
+				$resultado = mas_comentados_retContent();
+				$items = array();
+				foreach ($resultado as $node){
+					$items[] = array(
+						'data' => l($node->title, 'node/' . $node->nid));
+				}
+				if (empty($items)){
+					$block['content'] = 'No content Avaliable';
+				} else {
+					$block['content'] = theme('item_list', array('items' => $items));
+				}
+				return $block;
+				break;
+			}
+	}
 }
