@@ -19,6 +19,9 @@ body{
 	overflow:hidden;
 	background-color: none;
 }
+header{
+	background-color: white;
+}
 
 .main-content-wrapper{
 	display: block;
@@ -50,9 +53,34 @@ ul.menu li{
 	font-size: 15px;
 	font-weight: bold;
 	background-color: #e1e1e1;
+	border: 1px solid;
+	border-radius: 10px;
 }
 #block-system-main-menu li{
 	margin-left: -5px;
+}
+
+#block-system-main-menu li :hover{
+	background-color: #800000;
+	border-radius: 10px;
+	color: white;
+}
+#block-system-main-menu .first{
+	background-color: #800000;
+	border-radius: 10px;
+	color: white;
+}
+#block-system-main-menu .first :hover{
+	background-color: #800000;
+	border-radius: 10px;
+	color: white;
+}
+
+#block-system-main-menu a{
+	color: black;
+}
+#block-system-main-menu .first a{
+	color: white;
 }
 
 .view-recientes .views-row{
@@ -71,7 +99,7 @@ ul.menu li{
 #topicos li{
 	display: inline-block;
 	float: left;
-	margin-left: 50px;
+	margin-left: 35px;
 }
 
 #topicos p{
@@ -205,6 +233,7 @@ ul{
 	margin: 1px;
 	background-color: #e1e1e1;
 	padding: 5px;
+	overflow: hidden;
 }
 #block-views-opinion-block .views-field-field-image{
 	float: left;
@@ -329,6 +358,14 @@ margin-bottom: 15px;
 }
 #block-mas-comentados-mas-comentados{
 	display: inline-block;
+	width: 300px;
 	margin-top: 10px;
 	margin-left: 15px;
+}
+#block-mas-comentados-mas-comentados ul{
+	padding:0;
+}
+#block-mas-comentados-mas-comentados li{
+	font-size: 18px;
+	border-bottom: 1pt solid;
 }
